@@ -1,11 +1,41 @@
-<h1>Education</h1>
-<div id="app"></div>
-<div>
+<div layout="column">
+
+    <h2>Education</h2>
 
     <md-content>
-        <md-button ng-href="#!/home" class="md-raised md-primary">Home</md-button>
-        <md-button ng-href="#!/contact" class="md-raised md-primary">Contact</md-button>
-        <md-button ng-href="#!/education" class="md-raised md-primary">Education</md-button>
-        <md-button ng-href="#!/resume" class="md-raised md-primary">Resume</md-button>
-        <md-button ng-href="#!/portfolio" class="md-raised md-primary">Portfolio</md-button>
+        <md-list flex flex-offset="15" flex="70" md-padding>
+            <md-list-item class="md-3-line" ng-href="https://primeacademy.io/">
+                <div flex="25" layout="row" layout-align="center">
+                    <img class="education" ng-src="../assets/prime-logo.png" alt="Carlson School logo" />
+                </div>
+                <div class="md-list-item-text" layout="column">
+                    <h3>Prime Digital Academy</h3>
+                    <h4>Full Stack Programming Certificate</h4>
+                    <p>Bloomington, Minnesota</p>
+                </div>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item class="md-3-line" ng-href="https://carlsonschool.umn.edu/">
+                <div flex="25" layout="row" layout-align="center">
+                    <img class="education" ng-src="../assets/carlson-2.jpg" alt="Carlson School logo" />
+                </div>
+                <div class="md-list-item-text" layout="column">
+                    <h3>Carlson School of Management, University of Minnesota</h3>
+                    <h4>Master in Business Administration</h4>
+                    <p>Minneapolis, Minnesota</p>
+                </div>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item class="md-3-line" ng-href="https://www.macalester.edu">
+                <div flex="25" layout="row" layout-align="center">
+                    <img class="education" ng-src="../assets/mac-2.jpg" alt="Carlson School logo" />
+                </div>
+                <div class="md-list-item-text" layout="column">
+                    <h3>Macalester College</h3>
+                    <h4>Bachelor of Arts, Studio Arts</h4>
+                    <p>Saint Paul, Minnesota</p>
+                </div>
+            </md-list-item>
+        </md-list>
     </md-content>
+</div>

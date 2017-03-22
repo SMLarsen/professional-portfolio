@@ -12,3 +12,12 @@
   font-size: 2em;
   padding: 5px 40px 5px 80px;
 }
+
+md-divider {
+  padding: 10px 0;
+}
+
+.education {
+  height: 100px;
+  width: auto;
+}
