@@ -5,9 +5,11 @@ app.config(function($routeProvider, $mdThemingProvider) {
 
     $mdThemingProvider.theme('default')
         .primaryPalette('teal')
-        .accentPalette('blue')
-        .warnPalette('yellow')
-        .dark();
+        .accentPalette('indigo')
+        .warnPalette('green')
+        // .backgroundPalette('amber')
+        // .dark()
+        ;
 
     $routeProvider
         .when('/home', {

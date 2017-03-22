@@ -18,6 +18,8 @@
     <script src="../vendor/angular-animate.min.js"></script>
     <script src="../vendor/angular-aria.min.js"></script>
     <script src="../vendor/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- APP -->
     <script src="../scripts/client.js"></script>
@@ -29,12 +31,16 @@
     <script src="../scripts/controllers/portfolio.controller.js"></script>
     <script src="../scripts/controllers/resume.controller.js"></script>
 
-
 </head>
 
 <body ng-app="app">
-    <h1>Steve Larsen</h1>
+    <div ng-include="'views/templates/nav.html'"></div>
+    <br>
     <main ng-view></main>
+
+    <div ng-include="'views/templates/footer.html'"></div>
+
+
 </body>
 
 </html>

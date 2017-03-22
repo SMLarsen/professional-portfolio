@@ -1,0 +1,14 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    font-size: .65em;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-info i {
+  color: rgb(215, 66, 66);
+  font-size: 2em;
+  padding: 5px 40px 5px 80px;
+}
