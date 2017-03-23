@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-const app = angular.module('app', ['ngRoute', 'ngMaterial']);
+const app = angular.module('app', ['ngRoute', 'ngMaterial', 'ngSanitize']);
 
 app.config(function($routeProvider, $mdThemingProvider) {
 
