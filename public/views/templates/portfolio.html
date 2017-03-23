@@ -1,11 +1,169 @@
-<h1>Portfolio</h1>
-<div id="app"></div>
-<div>
+<div class="md-padding view-content" layout="column" ng-cloak>
+    <h2>Portfolio</h2>
+    <md-content layout-xs="column" layout="column">
 
-    <md-content>
-        <md-button ng-href="#!/home" class="md-raised md-primary">Home</md-button>
-        <md-button ng-href="#!/contact" class="md-raised md-primary">Contact</md-button>
-        <md-button ng-href="#!/education" class="md-raised md-primary">Education</md-button>
-        <md-button ng-href="#!/resume" class="md-raised md-primary">Resume</md-button>
-        <md-button ng-href="#!/portfolio" class="md-raised md-primary">Portfolio</md-button>
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/photoapp.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Photo App (AWS)</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>So I wanted to learn a bit about Amazon Web Services S3.  This is something I need for my Travelogger app so that I can actually upload photos, not just input links.</p>
+                    <p>Starting with the example demo from AWS, I worked my way through configuring the IAM and Cogito.  In a bit, the demo was working.</p>
+                    <p>Then I moved it into an Angular architecture, refactoring to take advantage of controllers and factories.</p>
+                    <p>The hard part was to then move it to the server.  A bit more difficult.  I also added a database piece, making the eventual port to Travelogger a bit easier.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                  <md-button>Specs</md-button>
+                  <md-button ng-click="vm.showAlert($event)">Demo Version</md-button>
+                    <md-button href="https://photo-app-aws.herokuapp.com/#!/home" target="_blank">Try It!</md-button>
+                    <md-button href="https://github.com/SMLarsen/professional-portfolio" target="_blank">Git</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/travelogger2.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Travelogger (Material Design)</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>You will be creating a little 'pick the block' game with HTML, CSS, and jQuery!</p>
+                    <p>On document load, append four (or more!) divs on to the DOM with jQuery, each colored with a different color. Each div needs to know which color it is.</p>
+                    <p>Prompt the player to pick one of the color blocks you created at random.</p>
+                    <p>If the player clicks on the correct color block, give them a success message. If they pick the wrong color, let them know.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                    <md-button>Assignment</md-button>
+                    <md-button>Try It!</md-button>
+                    <md-button href="https://github.com/SMLarsen/travelogger-material" target="_blank">Git</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/travelogger1.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Travelogger (Solo Project)</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>You will be creating a little 'pick the block' game with HTML, CSS, and jQuery!</p>
+                    <p>On document load, append four (or more!) divs on to the DOM with jQuery, each colored with a different color. Each div needs to know which color it is.</p>
+                    <p>Prompt the player to pick one of the color blocks you created at random.</p>
+                    <p>If the player clicks on the correct color block, give them a success message. If they pick the wrong color, let them know.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                  <md-button href="https://travelogger1.herokuapp.com/#/home" target="_blank">Try It!</md-button>
+                  <md-button href="https://github.com/SMLarsen/travelogger" target="_blank">Git</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/funthings.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Fun Things to Do</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>You will be creating a little 'pick the block' game with HTML, CSS, and jQuery!</p>
+                    <p>On document load, append four (or more!) divs on to the DOM with jQuery, each colored with a different color. Each div needs to know which color it is.</p>
+                    <p>Prompt the player to pick one of the color blocks you created at random.</p>
+                    <p>If the player clicks on the correct color block, give them a success message. If they pick the wrong color, let them know.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                  <md-button href="https://stark-woodland-23344.herokuapp.com/#/" target="_blank">Try It!</md-button>
+                  <md-button href="https://github.com/caseyhyde/fun-things" target="_blank">Git</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/stevenellen.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Travel Blog</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>You will be creating a little 'pick the block' game with HTML, CSS, and jQuery!</p>
+                    <p>On document load, append four (or more!) divs on to the DOM with jQuery, each colored with a different color. Each div needs to know which color it is.</p>
+                    <p>Prompt the player to pick one of the color blocks you created at random.</p>
+                    <p>If the player clicks on the correct color block, give them a success message. If they pick the wrong color, let them know.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                  <md-button href="http://stevenellen.com/pase-del-nino-parade/" target="_blank">Try It!</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/blockpicker.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Color Block Picker</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>You will be creating a little 'pick the block' game with HTML, CSS, and jQuery!</p>
+                    <p>On document load, append four (or more!) divs on to the DOM with jQuery, each colored with a different color. Each div needs to know which color it is.</p>
+                    <p>Prompt the player to pick one of the color blocks you created at random.</p>
+                    <p>If the player clicks on the correct color block, give them a success message. If they pick the wrong color, let them know.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                    <md-button>Assignment</md-button>
+                    <md-button href="https://smlarsen.github.io/jQueryColorBlockPicker/" target="_blank">Try It!</md-button>
+                    <md-button href="https://github.com/SMLarsen/jQueryColorBlockPicker" target="_blank">Git</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
+        <md-card class="project-element" layout="row" flex="50" layout-align="center center">
+            <img ng-src="../assets/calculator.jpg" class="md-card-image" alt="Washed Out">
+            <div layout="column">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Calculator</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>We are going to be building a calculator application using jQuery, Node, and Express, all hosted on Heroku!</p>
+                    <p>IMPORTANT: The logic for the calculator needs to be housed on the Server.</p>
+                    <p>The Client will take in the values (via 2 input fields) and the type of mathematical operation (selected using a button on the DOM). Each numerical value and the mathematical operator type will be bundled up in an object and then sent to the server via a POST request.</p>
+                    <p>Once the Server receives it, create the logic to compute the numbers in 1 of 4 different ways: The server should be able to handle (1) addition, (2) subtraction, (3) multiplication, and (4) division. Once the result of the mathematical operation is determined, it should be sent back down to the Client where it will be displayed on the DOM.</p>
+                    <p>Finally, build a clear button that resets the whole experience.</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="space-around center">
+                    <md-button>Assignment</md-button>
+                    <md-button href="https://intense-caverns-58794.herokuapp.com/" target="_blank">Try It!</md-button>
+                    <md-button href="https://github.com/SMLarsen/weekend-challenge-3" target="_blank">Git</md-button>
+                </md-card-actions>
+            </div>
+        </md-card>
+
     </md-content>
+</div>
+
+<md-button ng-click="vm.goToTop()" style="position:fixed !important;" ng-show="vm.showFAB" class="md-fab md-fab-bottom-right md-warn" aria-label="Scroll Up">
+    <md-icon md-svg-src="../assets/ic_keyboard_arrow_up_white_36px.svg"></md-icon>
+</md-button>
