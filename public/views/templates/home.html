@@ -1,13 +1,49 @@
-<div class="md-padding view-content" layout="column" ng-cloak>
+<div class="md-padding view-content" layout="row" ng-cloak>
+    <md-content flex layout-padding>
 
-<md-content>
-  <div layout="row" flex="50">
-    <div layout="column">
-      <h1>About</h1>
-    </div>
-    <div flex="50">
-      <img style="max-height: 300px;" src="../assets/steve_machinery.jpg" alt="Steve in heavy machinery">
-    </div>
-  </div>
-</md-content>
+        <div layout="row">
+            <div flex="60">
+                <h2>About</h2>
+                <pre><code>
+const steveLarsen = {
+    missionDriven: true,
+    abilityToDesign: true,
+    cravesResults: true,
+    teamPlayer: true,
+    fundimentalBeliefInAgile: true,
+    stengthfinders: [
+        'Futuristic',
+        'Strategic',
+        'Ideation',
+        'Connectedness',
+        'Intellection'
+        ],
+    wickedSenseOfHumor: true,
+    favoriteQuotes: [{
+        author: 'Albert Einstein',
+        quote: 'Everything should be made as simple as possible,' +
+            ' and no simpler'
+        },
+        {
+        author: 'Branch Rickey',
+        quote: 'Luck is the residue of good design'
+        }
+    ]
+};
+                </code></pre>
+                <!-- <h4>The Big Reveal</h4>
+                <p>Why would a seasoned and successful IT professional go to an intensive coding boot camp?</p>
+                <ol>
+                    <li>I find virtue in building things</li>
+                    <li>After suffered down-sizing in the great recession, I realized that I needed to retool with modern technologies</li>
+                    <li>I like coding, am good at it, and it is great fun!</li>
+                </ol> -->
+
+            </div>
+            <figure>
+                <img style="max-height: 400px;" src="../assets/steve_machinery.jpg" alt="Steve in heavy machinery">
+                <figcaption>Excavating on farm in southern Norway - Bucket List Checkoff!</figcaption>
+            </figure>
+        </div>
+    </md-content>
 </div>
