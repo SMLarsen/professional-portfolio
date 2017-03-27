@@ -14,17 +14,17 @@ app.config(function($routeProvider, $mdThemingProvider) {
     $routeProvider
         .when('/home', {
             templateUrl: 'views/templates/home.html',
-            controller: 'HomeController',
+            controller: 'PortfolioController',
             controllerAs: 'vm'
         })
         .when('/education', {
             templateUrl: 'views/templates/education.html',
-            controller: 'EducationController',
+            controller: 'PortfolioController',
             controllerAs: 'vm'
         })
         .when('/resume', {
             templateUrl: 'views/templates/resume.html',
-            controller: 'ResumeController',
+            controller: 'PortfolioController',
             controllerAs: 'vm'
         })
         .when('/portfolio', {
@@ -34,7 +34,7 @@ app.config(function($routeProvider, $mdThemingProvider) {
         })
         .when('/contact', {
             templateUrl: 'views/templates/contact.html',
-            controller: 'ContactController',
+            controller: 'PortfolioController',
             controllerAs: 'vm'
         })
         .otherwise({
